@@ -31,3 +31,12 @@
 .channel-toggle {
     margin: 1px 0;
 }
+
+/*
+    The channel names are this menu's actual content — the list of things being chosen — rather
+    than captions for some other control, so they carry primary text weight instead of the
+    --abyss-200 the theme gives a BaseField label by default.
+*/
+.channel-toggle > .unity-base-field__label {
+    color: var(--abyss-100);
+}

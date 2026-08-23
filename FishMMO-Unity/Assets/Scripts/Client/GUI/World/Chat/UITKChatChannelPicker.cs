@@ -71,6 +71,7 @@ namespace FishMMO.Client
 					{
 						name = $"channel-toggle-{channelName}",
 					};
+					toggle.AddToClassList("fish-toggle");
 					toggle.AddToClassList("channel-toggle");
 					toggle.RegisterValueChangedCallback((evt) => OnToggleChannel(channel, evt.newValue));
 					channelList.Add(toggle);
